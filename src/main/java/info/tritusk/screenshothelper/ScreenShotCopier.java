@@ -41,11 +41,9 @@ import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.ClipboardOwner;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;
-import java.awt.datatransfer.UnsupportedFlavorException;
-import java.io.IOException;
 
 @Mod.EventBusSubscriber
-@Mod(modid = "screenshot_helper", name = "ScreenShot Helper", version = "@INJECTED_VERSION@", useMetadata = true)
+@Mod(modid = "screenshot_helper", name = "ScreenShot Helper", version = "@INJECTED_VERSION@", useMetadata = true, clientSideOnly = true)
 public final class ScreenShotCopier {
 
     private static Logger logger;
@@ -83,7 +81,6 @@ public final class ScreenShotCopier {
      */
     private static final class TransferableImage implements Transferable {
 
-        @Nonnull
         private final Image image;
 
         TransferableImage(@Nonnull Image image) {
