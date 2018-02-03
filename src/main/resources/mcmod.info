@@ -1,0 +1,11 @@
+[
+  {
+    "modid": "screenshot_helper",
+    "name": "ScreenShot Helper",
+    "description": "Utilities about taking screen shot.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "authorList": ["3TUSK"],
+    "credits": "https://stackoverflow.com/questions/4552045/copy-bufferedimage-to-clipboard"
+  }
+]
